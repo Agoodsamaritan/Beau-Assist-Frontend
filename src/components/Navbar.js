@@ -1,4 +1,5 @@
 import React from "react"
+
 export default function NavBar() {
 
 return (
@@ -14,7 +15,7 @@ return (
     <section class="relative mx-auto">
       
       {/* <!-- navbar --> */}
-      <nav class="flex justify-between bg-blue-200 text-black w-screen">
+      <nav class="flex justify-between shadow-md text-black w-screen">
         <div class="px-5 xl:px-12 py-6 flex w-full items-center">
         <a class="text-3xl font-bold font-heading" href="#">GUIDE BEAUTY</a>
         
@@ -22,6 +23,7 @@ return (
       <ul class="hidden md:flex px-3 mx-auto font-semibold font-heading space-x-12">
         <li><a class="hover:text-gray-200" href="#">HOME</a></li>
         <li><a class="hover:text-gray-200" href="#">SHOP</a></li>
+        <li><a class="hover:text-gray-200" href="#">CONSULT</a></li>
         <li><a class="hover:text-gray-200" href="#">ABOUT US</a></li>
       </ul>
           
@@ -78,16 +80,16 @@ return (
   
     
       {/* <!-- Does this resource worth a follow? --> */}
-      <div class="absolute bottom-0 right-0 mb-4 mr-4 z-10">
-      <div>
-      <a title="Assistance" href="#" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
-      <img class="object-cover object-center w-full h-full rounded-full" src="https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2019/12/twitter-logo.jpg"/>
-      </a>
-      </div>
-      </div>
+        <div class="absolute bottom-0 right-0 mb-8 mr-7 z-10">
+        <div>
+        <a title="accessibility" href="#" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+        <img class="object-cover object-center w-full h-full rounded-full" src="https://i.ibb.co/tsTHD66/accessibility-icon.png"/>
+        </a>
+        </div>
+        </div>
 
   </nav>
-  
+
   </>
     );  
 }
