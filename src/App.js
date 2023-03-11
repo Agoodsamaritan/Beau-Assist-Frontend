@@ -1,10 +1,16 @@
 //import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold ">
-      A GOOD SAMARITAN.
+    <div>
+      <Navbar />
+    <h1 className="text-md font-bold ">
+      landing page
     </h1>
+    </div>
+    
+    
   )
 }
