@@ -6,8 +6,8 @@ export default function App() {
   return (
     <div>
       <Navbar />
-    <h1 className="text-3xl font-bold ">
-      Selma Blair joins GUIDE Beauty.
+    <h1 className="text-md font-bold ">
+      landing page
     </h1>
     </div>
     
