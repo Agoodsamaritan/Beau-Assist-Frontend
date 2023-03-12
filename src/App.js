@@ -8,6 +8,7 @@ export default function App() {
     <div>
       <Navbar /> 
       <Products />
+      
       <h1 className="text-md font-bold ">landing page</h1>
      
     </div>
