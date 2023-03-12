@@ -17,7 +17,7 @@ return (
       {/* <!-- navbar --> */}
       <nav class="flex justify-between shadow-md text-black w-screen">
         <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-        <a class="text-3xl font-bold font-heading" href="#">GUIDE BEAUTY</a>
+        <a class="text-3xl font-bold font-heading" href="#">GOOD BEAUTY</a>
         
       {/* <!-- Nav Links --> */}
       <ul class="hidden md:flex px-3 mx-auto font-semibold font-heading space-x-12">

@@ -68,11 +68,11 @@ export default function Example() {
         
         <div class="bg-white">
             <div className="mx-auto sm:py-12 sm:px-6 lg:max-w-14xl lg:px-8">
-            <h1 class="text-2xl font-bold tracking-tight text-gray-900">Best Sellers</h1>
+            <h1 class="text-2xl font-bold tracking-tight text-gray-900">Our Classic Best Sellers</h1>
             </div>
         </div>
 
-        <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-1 px-3 lg:grid-cols-4 px-28 xl:gap-x-24">
+        <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-1 px-17 lg:grid-cols-4 px-28 xl:gap-x-24">
         {products.map((product) => ( 
             <div key={product.id}>
                 <div class="min-h-80 aspect-w-1 aspect-h-80 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-100">
