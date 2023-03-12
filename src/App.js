@@ -1,9 +1,13 @@
-//import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import Products from './components/Products';
 
 export default function App() {
+  
+  const [products, setProducts] = useState()
+
+  const getProducts = async () => {
+    const response = await api.get("/api/v1/products") 
+  }
+  
   return (
     <div>
       <Navbar /> 
