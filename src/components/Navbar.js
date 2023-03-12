@@ -77,8 +77,6 @@ return (
     </section>
     </div>
   
-    
-      {/* <!-- Does this resource worth a follow? --> */}
         <div class="absolute bottom-0 right-0 mb-8 mr-7 z-10">
         <div>
         <a title="accessibility" href="#" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
