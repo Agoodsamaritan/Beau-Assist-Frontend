@@ -44,7 +44,7 @@ export default function Example() {
         {products.map((product) => ( 
 <div key={product.id}>
                 <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
-                    <img scr={product.imageSrc} alt={product.imageAlt} class="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
+                    <img src={product.imageSrc} alt={product.imageAlt} class="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
                 </div>
                 <div class="mt-4 flex justify-between">
                     <h3 class="text-md text-gray-700">
