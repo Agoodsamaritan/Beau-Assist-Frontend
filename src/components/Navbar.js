@@ -22,7 +22,7 @@ return (
       {/* <!-- Nav Links --> */}
       <ul class="hidden md:flex px-3 mx-auto font-semibold font-heading space-x-12">
         <li><a class="hover:text-gray-200" href="#">HOME</a></li>
-        <li><a class="hover:text-gray-200" href="#">SHOP</a></li>
+        <li><a class="hover:text-gray-200" href="/Products">SHOP</a></li>
         <li><a class="hover:text-gray-200" href="#">CONSULT</a></li>
         <li><a class="hover:text-gray-200" href="#">ABOUT US</a></li>
       </ul>
