@@ -32,7 +32,7 @@ export default function Products() {
       {products?.map((product) => ( 
         <div key={product.id}>
                
-          <div class="min-h-80 aspect-w-1 aspect-h-80 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+          <div class="min-h-100 aspect-w-1 aspect-h-80 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-100">
             <img src={product.image_link} alt={product.imageAlt} class="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
           </div> 
           <div class="mt-4 flex justify-between">
