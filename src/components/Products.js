@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import api from '../api/axiosConfig'
+import { Link } from 'react-router-dom'
 
 export default function Products() {
   const [products, setProducts] = useState();
+
 
   const getProducts = async () => {
     try {
@@ -19,6 +21,8 @@ export default function Products() {
   useEffect(() => {
     getProducts();
   },[])
+
+  
 
   return (
     <>
@@ -37,10 +41,10 @@ export default function Products() {
           </div> 
           <div class="mt-4 flex justify-between">
             <h3 class="text-md text-gray-700">
-              <a href={product.href}>
+            <Link to={`/products/${product.id}`} >
                 <span aria-hiddden="true" class="absolute inset-0"/>
                   {product.name}
-              </a>
+              </Link>
             </h3>
             {/* <p class="mt-1 text-sm text-gray-500">{product.product_colors}</p> */}
           </div>
@@ -50,6 +54,12 @@ export default function Products() {
       ))}
     </div>
 
+  )
+}
+
+
+
     </>
   )
 }
+
