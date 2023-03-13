@@ -7,8 +7,8 @@ return (
   <>
   
   <nav>
-    <div class="relative isolate flex justify-center overflow-hidden sm:px-8 py-2.5 bg-gradient-to-r from-yellow-200 via-red-300 to-yellow-200">
-      <a href="#" class="text-md font-medium text-white hover:text-gray-700">FREE US SHIPPING ON ORDERS $35+</a>   
+    <div class="relative isolate flex justify-center overflow-hidden sm:px-8 py-2.5 bg-gradient-to-r from-rose-500 via-pink-500 to-rose-500">
+      <a href="#" class="text-md font-bold text-white hover:text-gray-700">FREE US SHIPPING ON ORDERS $35+</a>   
     </div>
  
     <div class="flex flex-wrap place-items-center">
@@ -17,7 +17,7 @@ return (
       {/* <!-- navbar --> */}
       <nav class="flex justify-between shadow-md text-black w-screen">
         <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-        <a class="text-3xl font-bold font-heading" href="#">GOOD BEAUTY</a>
+        <a class="text-3xl font-bold font-heading" href="#">GUIDE BEAUTY</a>
         
       {/* <!-- Nav Links --> */}
       <ul class="hidden md:flex px-3 mx-auto font-semibold font-heading space-x-12">
@@ -76,12 +76,13 @@ return (
     
     </section>
     </div>
-  
-        <div class="absolute bottom-0 right-0 mb-8 mr-7 z-10">
+        <div class="absolute">
+        <div class="fixed bottom-0 right-0 mb-8 mr-7 z-10">
         <div>
         <a title="accessibility" href="#" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
         <img class="object-cover object-center w-full h-full rounded-full" src="https://i.ibb.co/tsTHD66/accessibility-icon.png"/>
         </a>
+        </div>
         </div>
         </div>
 
