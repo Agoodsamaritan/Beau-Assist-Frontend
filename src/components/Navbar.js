@@ -6,7 +6,7 @@ return (
 
   <>
   
-  <nav>
+  <nav class="sticky top-0 z-50">
     <div class="relative isolate flex justify-center overflow-hidden sm:px-8 py-2.5 bg-gradient-to-r from-rose-500 via-pink-500 to-rose-500">
       <a href="#" class="text-md font-bold text-white hover:text-gray-700">FREE US SHIPPING ON ORDERS $35+</a>   
     </div>
@@ -15,15 +15,14 @@ return (
     <section class="relative mx-auto">
       
       {/* <!-- navbar --> */}
-      <nav class="flex justify-between shadow-md text-black w-screen">
+      <nav class="flex justify-between shadow-md text-black w-screen bg-white ">
         <div class="px-5 xl:px-12 py-6 flex w-full items-center">
         <a class="text-3xl font-bold font-heading" href="#">GUIDE BEAUTY</a>
         
       {/* <!-- Nav Links --> */}
       <ul class="hidden md:flex px-3 mx-auto font-semibold font-heading space-x-12">
-        <li><a class="hover:text-gray-200" href="#">HOME</a></li>
+        <li><a class="hover:text-gray-200" href="/Home">HOME</a></li>
         <li><a class="hover:text-gray-200" href="/Products">SHOP</a></li>
-        <li><a class="hover:text-gray-200" href="#">CONSULT</a></li>
         <li><a class="hover:text-gray-200" href="#">ABOUT US</a></li>
       </ul>
           
