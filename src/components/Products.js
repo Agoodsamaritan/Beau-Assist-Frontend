@@ -29,7 +29,7 @@ export default function Products() {
             <img src={product.image_link} alt={product.imageAlt} class="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
           </div> 
           <div class="mt-4 flex justify-between">
-            <h3 class="text-md text-gray-700">
+            <h3 class="text-xl text-gray-700">
             <Link to={`/products/${product.id}`} >
                 <span aria-hiddden="true" class="absolute inset-0"/>
                   {product.name}
@@ -37,12 +37,13 @@ export default function Products() {
             </h3>
             {/* <p class="mt-1 text-sm text-gray-500">{product.product_colors}</p> */}
           </div>
-          <p class="mt-1 text-sm text-gray-500">{product.brand}</p>
-          <p class="text-sm font-medium text-gray-500">$ {product.price}</p>
+          <p class="mt-1 text-md text-gray-500">{product.brand}</p>
+          <p class="text-xl font-bold text-gray-500">$ {product.price}</p>
         </div>
       ))}
     </div>
     </>
+
   )
 }
 
