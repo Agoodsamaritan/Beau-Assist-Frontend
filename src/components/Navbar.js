@@ -23,14 +23,14 @@ return (
       <ul class="hidden md:flex px-3 mx-auto font-semibold font-heading space-x-12">
         <li><a class="hover:text-gray-200" href="/Home">HOME</a></li>
         <li><a class="hover:text-gray-200" href="/Products">SHOP</a></li>
-        <li><a class="hover:text-gray-200" href="#">ABOUT US</a></li>
+        <li><a class="hover:text-gray-200" href="/Product">CONSULT</a></li>
       </ul>
           
       {/* <!-- Header Icons --> */}
       <div class="hidden xl:flex items-center space-x-5 items-center">
         <a class="hover:text-gray-200" href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="-1 0 30 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z" />
         </svg>
         </a>
             
@@ -65,7 +65,7 @@ return (
         <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"></span>
         </span>
         </a>
-      
+        
         <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />

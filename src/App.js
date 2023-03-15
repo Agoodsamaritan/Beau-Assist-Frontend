@@ -10,10 +10,10 @@ export default function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar /> 
-        <Products />
+        <Navbar />
+        <Product />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<Product />} />
         </Routes>
