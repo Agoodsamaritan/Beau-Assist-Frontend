@@ -43,8 +43,8 @@ export default function Products() {
           <p class="text-xl font-bold text-gray-500">$ {product.price}</p>
           </div>
 
-          <div class="relative right h-32 w-32">
-            <button class="absolute right-0 w-40 bg-black py-1 px-4 text-white font-bold">ADD TO CART</button>
+          <div class="relative h-32 w-32">
+            <button class="absolute bottom-0 right-0 w-40 bg-black py-1 px-4 text-white font-bold">ADD TO CART</button>
           </div>
           </div>
 
