@@ -13,6 +13,7 @@ export default function App() {
 
   return (
     <div>
+
       <Provider store={store}>
         <BrowserRouter>
           <Navbar /> 
@@ -26,6 +27,8 @@ export default function App() {
           </Routes>
         </BrowserRouter>
       </Provider>
+
+
     </div>
   )
 } 

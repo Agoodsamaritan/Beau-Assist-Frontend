@@ -14,15 +14,16 @@ export default function Products() {
   if (!products) {
     return <div>Loading...</div>;
   }
+  
 
   return (
     <>
     <div class="bg-white">
       <div className="mx-auto sm:py-12 sm:px-6 lg:max-w-14xl lg:px-8">
-        <h1 class="text-2xl font-bold tracking-tight text-gray-900">Our Products</h1>
+        <h1 class="px-12 text-2xl font-bold tracking-tight text-gray-900">Our Products</h1>
       </div>
     </div>
-    <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-1 px-3 lg:grid-cols-4 px-28 xl:gap-x-24">
+    <div class="mt-0 grid grid-cols-1 px-20 gap-y-10 gap-x-8 sm:grid-cols-1 px-3 lg:grid-cols-3 px-28 xl:gap-x-24">
       {products?.map((product) => ( 
         <div key={product.id}>      
           <div class="min-h-100 aspect-w-1 aspect-h-80 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-100">
@@ -35,11 +36,20 @@ export default function Products() {
                   {product.name}
               </Link>
             </h3>
-            {/* <p class="mt-1 text-sm text-gray-500">{product.product_colors}</p> */}
           </div>
+          <div class="grid grid-cols-2">
+            <div>
           <p class="mt-1 text-md text-gray-500">{product.brand}</p>
           <p class="text-xl font-bold text-gray-500">$ {product.price}</p>
+          </div>
+
+          <div class="relative h-32 w-32">
+            <button class="absolute bottom-0 right-0 w-40 bg-black py-1 px-4 text-white font-bold">ADD TO CART</button>
+          </div>
+          </div>
+
         </div>
+      
       ))}
     </div>
     </>
