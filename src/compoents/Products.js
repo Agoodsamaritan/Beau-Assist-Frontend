@@ -6,7 +6,8 @@ export default function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    api.get("/api/v1/products").then((response) => {
+    api.get("/api/v1/products")
+    .then((response) => {
       setProducts(response.data);
     });
   }, []);
@@ -14,7 +15,6 @@ export default function Products() {
   if (!products) {
     return <div>Loading...</div>;
   }
-  
 
   return (
     <>
@@ -36,9 +36,8 @@ export default function Products() {
           <div class="mt-4 flex justify-between">
             <h3 class="text-xl text-gray-700">
             <Link to={`/products/${product.id}`} >
-                <span aria-hiddden="true" class="absolute inset-0"/>
-                  {product.name}
-              </Link>
+              {product.name}
+            </Link>
             </h3>
           </div>
           <div class="grid grid-cols-2">
