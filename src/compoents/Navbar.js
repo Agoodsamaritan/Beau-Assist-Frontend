@@ -1,14 +1,14 @@
 import React from "react"
 
 export default function NavBar() {
-      
+
 
 return (
 
   <>
   
   <nav class="sticky top-0 z-50">
-    <div class="relative isolate flex justify-center overflow-hidden sm:px-8 py-2.5 bg-gradient-to-r from-blue-700 via-blue-900 to-blue-700">
+    <div class="relative isolate flex justify-center overflow-hidden sm:px-8 py-2.5 bg-gradient-to-r from-blue-700 via-blue-800 to-blue-700">
       <a href="#" class="text-md font-bold text-white hover:text-gray-700">FREE US SHIPPING ON ORDERS $35+</a>   
     </div>
  
@@ -26,7 +26,7 @@ return (
       <ul class="hidden md:flex px-3 mx-auto text-lg font-semibold font-heading space-x-12">
         <li><a class="hover:text-gray-200" href="/Home">HOME</a></li>
         <li><a class="hover:text-gray-200" href="/Products">PRODUCTS</a></li>
-        <li><a class="hover:text-gray-200" href="/Product">LEARN</a></li>
+        <li><a class="hover:text-gray-200" href="/Quizes">LEARN</a></li>
       </ul>
           
       {/* <!-- Header Icons --> */}
@@ -73,36 +73,42 @@ return (
           
           {/* Burger Bar */}
          
-          <button class="navbar-burger self-center mr-12 xl:hidden">
+          <button type="button" data-collapse-toggle="navbar-cta" class="navbar-burger self-center mr-12 xl:hidden" aria-controls="navbar-cta" aria-expanded="false">
+
           <span class="sr-only">Open main menu</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="fill-current h-6 w-6 hover:text-gray-200" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <svg xmlns="http://www.w3.org/2000/svg" 
+          class="fill-current h-6 w-6 hover:text-gray-200" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" clip-rule="evenodd">
+          <path  fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
       
           </button>
-          <div class="space-y-1 px-10 absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl z-10 hidden">
-              <a href="#" class="block rounded px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">HOME</a>
-              <a href="/Products" class="block rounded px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">SHOP</a>
-              <a href="#" class="block rounded px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">LEARN</a>
-            </div> 
+          <div class="items-center justify-between hidden w-full d:flex md:w-auto md:order-1" id="navbar-cta ">
+          <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+            </li>
+          </ul>
+     </div> 
         </div>
         
       </nav>
     
     </section>
     </div>
-        <div class="absolute">
-        <div class="fixed bottom-0 left-3 mb-7 mr-7">
-        <div>
-        <a title="beautyassistant" href="#" target="_blank" class="flex w-24 h-24 rounded-full max-w-full transition-all p-4 border-8 border-blue-700 hover:drop-shadow-lg transform hover:scale-110 hover:rotate--8">
-        <img class="object-cover object-center w-full h-auto" src="https://i.ibb.co/94B29Dp/iconmonstr-customer-7-240.png"/>
-        </a>
-        </div>
-        </div>
-        </div>
 
-  </nav>
-  </>
+
+
+    </nav>
+    </>
     );  
 
     

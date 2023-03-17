@@ -18,11 +18,15 @@ export default function Products() {
 
   return (
     <>
+    
+    {/* Title */}
     <div class="bg-white">
       <div className="mx-auto sm:py-12 sm:px-6 lg:max-w-14xl lg:px-8">
         <h1 class="px-12 text-2xl font-bold tracking-tight text-gray-900">Our Products</h1>
       </div>
     </div>
+
+    {/* Products */}
     <div class="mt-0 grid grid-cols-1 px-20 gap-y-10 gap-x-8 sm:grid-cols-1 px-3 lg:grid-cols-3 px-28 xl:gap-x-24">
       {products?.map((product) => ( 
         <div key={product.id}>      
@@ -39,11 +43,12 @@ export default function Products() {
           </div>
           <div class="grid grid-cols-2">
             <div>
-          <p class="mt-1 text-md text-gray-500">{product.brand}</p>
-          <p class="text-xl font-bold text-gray-500">$ {product.price}</p>
+          <p class="mt-1 text-md text-black">{product.brand}</p>
+          <p class="text-xl font-bold text-gray-700">$ {product.price}</p>
           </div>
 
-          <div class="relative h-32 w-32">
+          {/* Add to cart button */}
+          <div class="relative h-auto w-auto">
             <button class="absolute bottom-0 right-0 w-40 bg-black py-1 px-4 text-white font-bold">ADD TO CART</button>
           </div>
           </div>
