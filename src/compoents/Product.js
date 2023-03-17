@@ -2,16 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import api from "../api/axiosConfig";
 import { addToCart } from "../service/actions/cart";
-import { useDispatch, useSelector } from "react-redux";
-import { selectProducts } from "../service/selectors";
+import { useDispatch } from "react-redux";
 
 
 export default function Product() {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const dispatch = useDispatch();
-  const state = useSelector(selectProducts);
-    console.log(state);
+
 
   useEffect(() => {
     api.get(`/api/v1/products/${id}`).then((response) => {
