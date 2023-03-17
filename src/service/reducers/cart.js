@@ -6,12 +6,12 @@ const initialState = {
 };
 
 // reducer 
-const reducer = (state = initialState, action) => {
+const cartReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TO_CART:
-      console.log("Adding item to cart:", action.payload);
-      console.log("Current cart items:", state.items);
-      console.log("Current cart total:", state.total);
+      // console.log("Adding item to cart:", action.payload);
+      // console.log("Current cart items:", state.items);
+      // console.log("Current cart total:", state.total);
       return {
         ...state,
         items: [...state.items, action.payload],
@@ -29,4 +29,4 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-export default reducer;
+export default cartReducer;
