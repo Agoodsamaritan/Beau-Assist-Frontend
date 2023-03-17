@@ -39,15 +39,15 @@ export default function Quizes() {
                 </div>
 
                 {/*body*/}
-                <div className="relative flex-auto">
-                  <h1 className="text-3xl font-semibold">
-                   I'd like to shop
-                   </h1>
+                <div className="relative p-8 flex-auto">
+                  <h3 className="py-6 px-8 text-xl font-semibold">
+                   I'd like to shop...
+                   </h3>
 
-                <div class="grid grid-cols-3 gap-4">
+                <div class="flex p-8 grid grid-cols-3 gap-8">
                 <div>
                     <button
-                    className="bg-blue-700 text-white text-bold active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="text-white py-3 px-10  font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="button"
                     onClick={() => setShowModal(false)}
                     >Make Up
@@ -56,7 +56,7 @@ export default function Quizes() {
                     
                 <div>
                     <button
-                    className="bg-blue-700 text-white text-bold active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="text-white py-3 px-10 font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="button"
                     onClick={() => setShowModal(false)}
                     >Skin Care
@@ -65,7 +65,7 @@ export default function Quizes() {
 
                 <div>
                     <button
-                    className="bg-blue-700 text-white text-bold text-lg active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="text-white py-3 px-14 font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="button"
                     onClick={() => setShowModal(false)}
                     >Both
