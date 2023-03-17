@@ -1,11 +1,12 @@
 import React from "react";
 
-export default function Quizes() {
+export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
 
   return (
     <>
-        <button class="fixed bottom-24 left-24 bg-white rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" type="button"> 
+        <button class="fixed bottom-24 left-24 bg-white rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" 
+        type="button"> 
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
@@ -19,6 +20,7 @@ export default function Quizes() {
       
       {showModal ? (
             
+            // Dialog Modal: Opening
         <>
           <div
             className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
@@ -90,7 +92,10 @@ export default function Quizes() {
           </div>
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
-      ) : null}
+      ) 
+      
+      : null  
+      }
     </>
   );
 }
