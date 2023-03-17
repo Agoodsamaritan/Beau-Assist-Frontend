@@ -1,7 +1,8 @@
 import React from "react";
 
-export default function Modal() {
+export default function Quizes() {
   const [showModal, setShowModal] = React.useState(false);
+
   return (
     <>
         <button class="fixed bottom-24 left-24 bg-white rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" type="button"> 
@@ -36,27 +37,52 @@ export default function Modal() {
                   >
                   </button>
                 </div>
+
                 {/*body*/}
-                <div className="relative p-6 flex-auto">
-                  <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                    
-                  </p>
+                <div className="relative flex-auto">
+                  <h1 className="text-3xl font-semibold">
+                   I'd like to shop
+                   </h1>
+
+                <div class="grid grid-cols-3 gap-4">
+                <div>
+                    <button
+                    className="bg-blue-700 text-white text-bold active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                    >Make Up
+                    </button>
                 </div>
+                    
+                <div>
+                    <button
+                    className="bg-blue-700 text-white text-bold active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                    >Skin Care
+                    </button>
+                </div>
+
+                <div>
+                    <button
+                    className="bg-blue-700 text-white text-bold text-lg active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                    >Both
+                    </button>
+                </div>
+
+                </div>
+                </div>
+
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                   <button
-                    className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    Close
-                  </button>
-                  <button
-                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Save Changes
+                    Next
                   </button>
                 </div>
               </div>
