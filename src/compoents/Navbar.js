@@ -58,7 +58,7 @@ return (
         </div>
 
       {/* <!-- Responsive navbar --> */}
-        <div class="-mr-2 flex">
+        <div class="-mr-2 flex ">
         
           {/* Shopping cart Icon */}
           <button class="xl:hidden inline-flex mr-6 items-center" aria-controls="mobile-menu" aria-expanded="false">
@@ -72,34 +72,32 @@ return (
           </button>
           
           {/* Burger Bar */}
-         
-          <button type="button" data-collapse-toggle="navbar-cta" class="navbar-burger self-center mr-12 xl:hidden" aria-controls="navbar-cta" aria-expanded="false">
 
-          <span class="sr-only">Open main menu</span>
-          <svg xmlns="http://www.w3.org/2000/svg" 
-          class="fill-current h-6 w-6 hover:text-gray-200" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" clip-rule="evenodd">
-          <path  fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-      
-          </button>
-          <div class="items-center justify-between hidden w-full d:flex md:w-auto md:order-1" id="navbar-cta ">
-          <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-            </li>
-          </ul>
-     </div> 
-        </div>
+          
+          <div class="flex self-center mr-12 lg:hidden xl:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <div class="hidden space-x-8 lg:flex">
+            <a href="#">HOME</a>
+            <a href="/Products">SHOP</a>
+            <a href="/Quizes">LEARN</a>
+          </div>
+          </div>
+          
         
+        </div>
       </nav>
     
     </section>
