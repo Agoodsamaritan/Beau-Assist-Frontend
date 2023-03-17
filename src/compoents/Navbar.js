@@ -1,7 +1,7 @@
 import React from "react"
 
 export default function NavBar() {
-      
+
 
 return (
 
@@ -26,7 +26,7 @@ return (
       <ul class="hidden md:flex px-3 mx-auto text-lg font-semibold font-heading space-x-12">
         <li><a class="hover:text-gray-200" href="/Home">HOME</a></li>
         <li><a class="hover:text-gray-200" href="/Products">PRODUCTS</a></li>
-        <li><a class="hover:text-gray-200" href="/Product">LEARN</a></li>
+        <li><a class="hover:text-gray-200" href="/Quizes">LEARN</a></li>
       </ul>
           
       {/* <!-- Header Icons --> */}
@@ -106,32 +106,6 @@ return (
     </div>
 
 
-
-        {/* Beauty Assist Feature */}
-        <div class="absolute">
-
-          {/* X button : close feature */}
-          <div>
-          <button type="button" class="fixed bottom-24 left-24 bg-white rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-              <span class="sr-only">Close menu</span>
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-
-          </div>
-        
-        {/* Beauty Assist Round Icon */}
-        <div class="fixed bottom-0 left-3 mb-7 mr-7">
-            
-          <div>
-          <a title="beautyassistant" href="#" target="_blank" class="flex w-24 h-24 rounded-full max-w-full transition-all p-4 border-8 border-blue-700 hover:drop-shadow-lg transform hover:scale-110 hover:rotate--8">
-            <img class="object-cover object-center w-full h-auto" src="https://i.ibb.co/94B29Dp/iconmonstr-customer-7-240.png"/>
-          </a>
-          </div>
-        
-        </div>
-        </div>
 
     </nav>
     </>
