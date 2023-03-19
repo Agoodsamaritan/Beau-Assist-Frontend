@@ -30,21 +30,21 @@ export default function Product() {
 
   return (
     <div>
-      <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+      <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
         <div key={product.id}>
-          <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
-            <img src={product.image_link} alt={product.name} class="h-full w-full object-cover object-center lg:h-full lg:w-full" />
+          <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+            <img src={product.image_link} alt={product.name} className="h-full w-full object-cover object-center lg:h-full lg:w-full" />
           </div>
-          <div class="mt-4 flex justify-between">
-            <h3 class="text-md text-gray-700">
+          <div className="mt-4 flex justify-between">
+            <h3 className="text-md text-gray-700">
               <p>
-                <span aria-hiddden="true" class="absolute inset-0" />
+                <span aria-hiddden="true" className="absolute inset-0" />
                 {product.name}  
               </p>
             </h3>
           </div>
-          <p class="text-sm font-medium text-gray-500">{product.description}</p>
-          <p class="text-sm font-medium text-gray-500">${product.price}</p>
+          <p className="text-sm font-medium text-gray-500">{product.description}</p>
+          <p className="text-sm font-medium text-gray-500">${product.price}</p>
         </div>
       </div>
       <button onClick={() => handleAddToCart(product)}> Add to Cart </button>

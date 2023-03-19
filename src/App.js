@@ -5,6 +5,7 @@ import Product from './compoents/Product';
 import Home from './compoents/Home';
 import Cart from './compoents/Cart';
 import Modal from './compoents/Modal';
+import Footer from './compoents/Footer';
 import Results from './compoents/Results'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
@@ -20,6 +21,7 @@ export default function App() {
         <BrowserRouter>
           <Navbar /> 
           
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
@@ -32,8 +34,8 @@ export default function App() {
           </Routes>
         </BrowserRouter>
       </Provider>
-
-
+      
+      <Footer />
     </div>
   )
 } 
