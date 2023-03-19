@@ -2,17 +2,16 @@ import { useEffect, useState } from "react";
 import api from '../api/axiosConfig'
 import { Link } from 'react-router-dom'
 
-export default function Products() {
+export default function Results(props) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    api.get("/api/v1/products")
-    .then((response) => {
+    async function fetchData() {
+      const response = await api.get(`/api/v1/products/type/${props.type}`);
       setProducts(response.data);
-    });
-  }, []);
-
-
+    }
+    fetchData();
+  }, [props.type]);
 
   return (
     <>
@@ -20,7 +19,7 @@ export default function Products() {
     {/* Title */}
     <div class="bg-white">
       <div className="mx-auto sm:py-12 sm:px-6 lg:max-w-14xl lg:px-8">
-        <h1 class="text-2xl font-bold tracking-tight text-gray-900">Our Products</h1>
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900">We selected these products for you:</h1>
       </div>
     </div>
 
@@ -57,4 +56,3 @@ export default function Products() {
     </>
   )
 }
-
