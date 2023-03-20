@@ -33,9 +33,10 @@ export default function App() {
             <Route path='/results' element={<Results type="blush" />} />
           </Routes>
         </BrowserRouter>
-      </Provider>
       
-      <Footer />
+        {/* <Modal /> */}
+        <Footer />
+      </Provider>
     </div>
   )
 } 

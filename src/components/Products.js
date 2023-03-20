@@ -33,10 +33,9 @@ export default function Products() {
           </div> 
           <div className="mt-4 flex justify-between">
             <h3 className="text-md text-gray-700">
-            <Link to={`/products/${product.id}`} >
-                <span aria-hiddden="true" class="absolute inset-0"/>
-                  {product.name}
-              </Link>
+            <Link to={`/products/${product.id}`} > 
+              {product.name}
+            </Link>
             </h3>
             {/* <p class="mt-1 text-sm text-gray-500">{product.product_colors}</p> */}
           </div>

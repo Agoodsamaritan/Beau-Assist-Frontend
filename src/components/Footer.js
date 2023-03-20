@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer(props) {
     return (
-    <nav id="footer" className="bg-black">
+    <nav id="footer" className="bg-black mt-2">
     
     {/* Container */}
     <div className="sticky fixed bottom-0 container mx-auto pt-8 pb-4 ">
