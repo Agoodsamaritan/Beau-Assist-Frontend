@@ -13,6 +13,7 @@ We were inspired by the people who surround us. Our team spends time with elderl
 
 ### Group members:
 - [Yani Asari](https://github.com/yani82) - Product Manager
+- [Michela Petruzziello](https://www.linkedin.com/in/michela-petruzziello/) - UX Designer
 - [Noberto Santiago](https://github.com/N-Santiago) - Fullstack Engineer
 - [Nita Lo](https://git.generalassemb.ly/nlo88) - Frontend Engineer
 - [Bin Lin](https://github.com/a26230203) - Backend Engineer
