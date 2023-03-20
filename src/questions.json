@@ -1,0 +1,124 @@
+{
+    "title": "Beauty Assistant",
+    "description": "Answer a few questions to determine your skin type and get personalized skincare recommendations.",
+    "questions": [
+        {
+            "id": 1,
+            "question": "I'd like to shop...",
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Make Up"
+                },
+                {
+                    "id": 2,
+                    "text": "Skincare"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What is your skin type?",
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Oily"
+                },
+                {
+                    "id": 2,
+                    "text": "Dry"
+                },
+                {
+                    "id": 3,
+                    "text": "Combinations"
+                },
+                {
+                    "id": 4,
+                    "text": "Normal"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What is your skin concern?",
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Fine Lines & Wrinkles"
+                },
+                {
+                    "id": 2,
+                    "text": "Dark Spots"
+                },
+                {
+                    "id": 3,
+                    "text": "Pores"
+                },
+                {
+                    "id": 4,
+                    "text": "Acne"
+                },
+                {
+                    "id": 5,
+                    "text": "Dryness"
+                },
+                {
+                    "id": 6,
+                    "text": "Redness"
+                },
+                {
+                    "id": 7,
+                    "text": "Sensitive Skin"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What is your age range?",
+            "options": [
+                {
+                    "id": 1,
+                    "text": "20s"
+                },
+                {
+                    "id": 2,
+                    "text": "30s"
+                },
+                {
+                    "id": 3,
+                    "text": "40s"
+                },
+                {
+                    "id": 4,
+                    "text": "50s and above"
+                },
+                {
+                    "id": 5,
+                    "text": "Prefer Not To Say"
+                }
+            ]
+        }
+    ],
+    "results": [
+        {
+            "id": 1,
+            "title": "Hydration Regiment",
+            "description": "We recommend using a moisturizing cleanser and a rich moisturizer to keep your skin soft and supple."
+        },
+        {
+            "id": 2,
+            "title": "Normal Skin Routine ",
+            "description": "For balanced and healthy skin, we recommend using a gentle cleanser and a light moisturizer to keep your skin's natural glow."
+        },
+        {
+            "id": 3,
+            "title": "Oily Skincare Routine",
+            "description": "We recommend using a foaming cleanser and a lightgweight, oil-free moisturizer to control excess oil and prevent breakouts."
+        },
+        {
+            "id": 4,
+            "title": "Lifting & Firming Routine",
+            "description": "We recommend using a rich moisturizing cleanser and a rich moisturizer to lift, firm and strengthen your skin."
+        }    
+    ]
+}
