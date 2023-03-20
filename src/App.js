@@ -6,7 +6,8 @@ import Home from './components/Home';
 import Cart from './components/Cart';
 import Modal from './components/Modal';
 import Footer from './components/Footer';
-import Results from './components/Results'
+import Results from './components/Results';
+import Makeup from './components/Makeup'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './service/reducers/index'
@@ -20,6 +21,7 @@ export default function App() {
       <Provider store={store}>
         <BrowserRouter>
           <Navbar /> 
+          <Modal />
           
           
           <Routes>
@@ -31,6 +33,7 @@ export default function App() {
             <Route path="/modal" element={<Modal />} />
             {/* We need to figure out how to pass the product type or what we decide would be the quiz result. */}
             <Route path='/results' element={<Results type="blush" />} />
+            <Route path='/makeup' element={<Makeup />} />
           </Routes>
         </BrowserRouter>
       

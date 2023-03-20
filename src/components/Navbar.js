@@ -26,7 +26,7 @@ return (
       <ul className="hidden md:flex px-3 mx-auto text-lg font-semibold font-heading space-x-12">
         <li><a className="hover:text-gray-200" href="/Home">HOME</a></li>
         <li><a className="hover:text-gray-200" href="/Products">PRODUCTS</a></li>
-        <li><a className="hover:text-gray-200" href="/Modal">LEARN</a></li>
+        <li><a className="hover:text-gray-200" href="/Makeup">LEARN</a></li>
       </ul>
           
       {/* <!-- Header Icons --> */}

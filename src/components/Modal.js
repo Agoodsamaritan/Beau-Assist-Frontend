@@ -27,7 +27,7 @@ export default function Modal() {
           >
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+              <div className="border-0 rounded-lg shadow-xl relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                   <h3 className="text-3xl font-semibold">
@@ -41,12 +41,12 @@ export default function Modal() {
                 </div>
 
                 {/*body*/}
-                <div className="relative p-8 flex-auto">
+                <div className="relative p-20 flex-auto">
                   <h3 className="py-6 px-8 text-xl font-semibold">
-                   I'd like to shop...
+                   What would you like to shop ?
                    </h3>
 
-                <div class="flex p-8 grid grid-cols-3 gap-8">
+                <div class="flex p-8 grid grid-cols-2 gap-8">
                 <div>
                     <button
                     className="text-white py-3 px-10  font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -65,14 +65,14 @@ export default function Modal() {
                     </button>
                 </div>
 
-                <div>
+                {/* <div>
                     <button
                     className="text-white py-3 px-14 font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="button"
                     onClick={() => setShowModal(false)}
                     >Both
                     </button>
-                </div>
+                </div> */}
 
                 </div>
                 </div>
@@ -84,7 +84,7 @@ export default function Modal() {
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    Next
+                   Close
                   </button>
                 </div>
               </div>

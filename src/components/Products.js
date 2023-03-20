@@ -25,7 +25,7 @@ export default function Products() {
     </div>
 
     {/* Products */}
-    <div className="mt-0 grid grid-cols-1 px-20 gap-y-10 gap-x-8 sm:grid-cols-1 px-3 lg:grid-cols-3 px-28 xl:gap-x-24">
+    <div className="m-24 grid grid-cols-1 px-20 gap-y-10 gap-x-8 sm:grid-cols-1 px-3 lg:grid-cols-3 px-28 xl:gap-x-24">
       {products?.map((product) => ( 
         <div key={product.id}>      
           <div className="min-h-100 aspect-w-1 aspect-h-80 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-100">
