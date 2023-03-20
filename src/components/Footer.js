@@ -2,10 +2,10 @@ import React from 'react';
 
 function Footer(props) {
     return (
-    <nav id="footer" className="bg-black mt-2">
+    <nav id="footer" className="fixed bottom-0 left-0 right-0 bg-black mt-12">
     
     {/* Container */}
-    <div className="sticky fixed bottom-0 container mx-auto pt-8 pb-4 ">
+    <div className="sticky fixed container p-4 mx-auto pt-8 pb-4 ">
 
         <div className="flex flex-wrap overflow-hidden sm:-mx-1 md:-mx-px lg:-mx-2 xl:-mx-2">
             
