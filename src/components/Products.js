@@ -45,7 +45,7 @@ export default function Products() {
           <p className="text-xl font-bold text-gray-500">$ {product.price}</p>
           </div>
 
-          <div className="relative h-32 w-32">
+          <div className="relative h-34 w-34">
             <button className="absolute bottom-0 right-0 w-40 bg-black py-1 px-4 text-white font-bold">ADD TO CART</button>
           </div>
           </div>
