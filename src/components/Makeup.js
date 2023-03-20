@@ -11,16 +11,16 @@ export default function Makeup() {
         </p>
         <div className="flex p-8 grid grid-cols-2 gap-8">
         <button className="font-xl font-bold uppercase">
-            oily
+           Dry
         </button>
         <button className="font-xl font-bold uppercase">
-            combination
+            Combination
         </button>
         <button className="font-xl font-bold uppercase">
-            normal
+            Normal
         </button>
         <button className="font-xl font-bold uppercase">
-            oily
+            Oily
         </button>
         </div>
         </div>
