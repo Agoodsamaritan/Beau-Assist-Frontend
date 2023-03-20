@@ -1,71 +1,18 @@
-# Getting Started with Create React App
+<img src="https://i.ibb.co/hK0zpFn/apple-icon-144x144.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# beau-assist.
 
-## Available Scripts
+With the plethora of skincare and makeup products that are being released constantly, we all know it can be intimidating to navigate a crowded website and choose products that would work for your skin. We created Beau Assist with an intuitive and simple design, to help users create a tailored beauty routine and most importantly build confidence. 
 
-In the project directory, you can run:
+## User Stories
 
-### `npm start`
+We were inspired by the people who surround us. Our team spends time with elderly family and friends on a daily basis, so we wanted to create a product that would not only benefit them, but anyone else who uses it.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshot
+<img width="587" alt="Screen Shot 2021-09-09 at 11 49 02 AM" src="https://i.ibb.co/z4gFXnM/Screen-Shot-2023-03-20-at-11-07-19-AM.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Frontend
+### Group members:
+- [Yani Asari](https://github.com/yani82) - Product Manager
+- [Noberto Santiago](https://github.com/N-Santiago) - Fullstack Engineer
+- [Nita Lo](https://git.generalassemb.ly/nlo88) - Frontend Engineer
+- [Bin Lin](https://github.com/a26230203) - Backend Engineer
