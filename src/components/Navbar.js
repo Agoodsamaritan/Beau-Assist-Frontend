@@ -26,7 +26,7 @@ return (
       <ul className="hidden md:flex px-3 mx-auto text-lg font-semibold font-heading space-x-12">
         <li><a className="hover:text-gray-200" href="/Home">HOME</a></li>
         <li><a className="hover:text-gray-200" href="/Products">PRODUCTS</a></li>
-        <li><a className="hover:text-gray-200" href="/Makeup">LEARN</a></li>
+        <li><a className="hover:text-gray-200" href="/Quiz">LEARN</a></li>
       </ul>
           
       {/* <!-- Header Icons --> */}
@@ -92,7 +92,7 @@ return (
             <div className="hidden space-x-8 lg:flex">
             <a href="#">HOME</a>
             <a href="/Products">SHOP</a>
-            <a href="/Quizes">LEARN</a>
+            <a href="/Quiz">LEARN</a>
           </div>
           </div>
           

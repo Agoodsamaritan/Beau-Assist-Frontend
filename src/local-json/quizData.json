@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "question": "What is your skin type?",
+    "options": [
+        {
+            "id": 1,
+            "text": "Oily"
+        },
+        {
+            "id": 2,
+            "text": "Dry"
+        },
+        {
+            "id": 3,
+            "text": "Combinations"
+        },
+        {
+            "id": 4,
+            "text": "Normal"
+        }
+    ]
+},
+
+{
+    "id": 3,
+    "question": "What is your skin concern?",
+    "options": [
+                {
+                    "id": 1,
+                    "text": "Fine Lines & Wrinkles"
+                },
+                {
+                    "id": 2,
+                    "text": "Dark Spots"
+                },
+                {
+                    "id": 3,
+                    "text": "Pores"
+                },
+                {
+                    "id": 4,
+                    "text": "Acne"
+                },
+                {
+                    "id": 5,
+                    "text": "Dryness"
+                },
+                {
+                    "id": 6,
+                    "text": "Redness"
+                },
+                {
+                    "id": 7,
+                    "text": "Sensitive Skin"
+                }
+            ]
+}
+
+]
