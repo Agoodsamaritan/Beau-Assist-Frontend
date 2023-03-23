@@ -47,9 +47,9 @@ export default function Product() {
           <p className="text-sm font-medium text-gray-500">${product.price}</p>
         </div>
       </div>
-      {/* <div className="relative h-32 w-32"> */}
+      <div className="relative h-32 w-32">
             <button className="relative h-10 w-32 absolute bottom-0 right-0 w-40 bg-black py-1 px-4 text-white font-bold" onClick={() => handleAddToCart(product)}>ADD TO CART</button>
-        {/* </div> */}
+        </div>
     </div>
   )
 }
