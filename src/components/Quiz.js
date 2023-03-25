@@ -29,7 +29,7 @@ export default function Quiz() {
         { "id": "A", "value": "Acne" },
         { "id": "B", "value": "Fine lines and wrinkles" },
         { "id": "C", "value": "Dullness and uneven texture" },
-        { "id": "D", "value": "Hyperpigmentation" },
+        { "id": "D", "value": "Hyper pigmentation" },
         { "id": "E", "value": "Redness and sensitivity" },
         { "id": "F", "value": "Enlarged pores" },
         { "id": "G", "value": "Dehydration" },
@@ -117,17 +117,19 @@ export default function Quiz() {
             <h1 className="mb-5 text-3xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
               <span>Question {currentQuestion + 1}</span>/{questions.length}
             </h1>
-            <div className='question-text'>{questions[currentQuestion].questionText}</div>
-            {questions[currentQuestion].answerOptions.map((answerOption) => (
+          <div className='question-text'>{questions[currentQuestion].questionText}</div>
+          <div className="flex p-8 grid grid-cols-2 gap-4 ">
+          {questions[currentQuestion].answerOptions.map((answerOption) => (
               ( <label key={answerOption.id} >  
-                <div className="flex p-8 grid grid-cols-2 gap-8">
-                  <button className="w-48 font-xl font-bold uppercase text-white py-3 px-10  font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={() => handleAnswerOptionClick()}>
+                  <button className="w-48 font-xl font-bold uppercase text-white py-3 px-10 font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={() => handleAnswerOptionClick()}>
                     {answerOption.value}
                   </button>
-                </div>
                 </label>
               )
             ))}
+          </div>
+
+            
           </div>
         </div>      
       )}            
