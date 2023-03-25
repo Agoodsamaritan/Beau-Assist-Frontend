@@ -2,8 +2,8 @@ import React from 'react';
 
 function Footer(props) {
     return (
-    <div className='relative'>
-    <nav id="footer" className="fixed bottom-0 left-0 right-0 bg-black">
+    <div className='relative h-48'>
+    <nav id="footer" className="flex-col min-h-0 bg-black">
     
     {/* Container */}
     <div className="sticky fixed container p-4 mx-auto pt-8 pb-4 ">
