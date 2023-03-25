@@ -17,9 +17,8 @@ export default function Home() {
             </p>
           </div>
           <div className="mx-auto bg-cover mt-10 max-w-2xl lg:mx-0 mt-auto lg:max-w-none mt-10">
-          <button 
-          className="text-white py-3 px-10 text-xl uppercase mt-28 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          type="button">SHOP COLLECTION</button> 
+          <a 
+          className="text-white py-3 px-10 text-xl uppercase mt-28 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" href="/Products">SHOP COLLECTION</a> 
           </div>
         </div>
       </div>
