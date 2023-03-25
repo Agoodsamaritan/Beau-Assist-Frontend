@@ -151,6 +151,28 @@ export default function Quiz() {
       }
     };
 
+    const [skinType, setSkinType] = useState('')
+    const [ageRange, setAgeRange] = useState('')
+    const [skinConcerns, setSkinConcerns] = useState('')
+
+    const handleSkinTypeSelection = (selectedOption) => {
+        setSkinType(selectedOption.value);
+    }
+
+    const handleAgeRangeSelection = (selectedOption) => {
+        setAgeRange(selectedOption.value);
+    }
+
+    const handleSkinConcernsSelection = (selectedOptions) => {
+        const selectedValues = selectedOptions.map((option) => option.value);
+        setSkinConcerns(selectedValues);
+    }
+
+    const findRecommendation = () => {
+        const recommendations = recommendations.find((rec) => {
+            
+        })
+    }
    
   return (
     <div className='thanks-message'>
