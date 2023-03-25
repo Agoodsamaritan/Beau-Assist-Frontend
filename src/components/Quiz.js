@@ -64,92 +64,23 @@ export default function Quiz() {
       ]
     }  
   ]
-    // {
-    //   "quiz": {
-    //     "questions": [
-    //       {
-    //         "id": 1,
-    //         "question": "What is your skin type?",
-    //         "options": [
-    //           { "id": "A", "value": "Oily" },
-    //           { "id": "B", "value": "Dry" },
-    //           { "id": "C", "value": "Combination" },
-    //           { "id": "D", "value": "Normal" },
-    //           { "id": "E", "value": "Sensitive" }
-    //         ]
-    //       },
-    //       {
-    //         "id": 2,
-    //         "question": "What is your age range?",
-    //         "options": [
-    //           { "id": "A", "value": "13-17" },
-    //           { "id": "B", "value": "18-24" },
-    //           { "id": "C", "value": "25-34" },
-    //           { "id": "D", "value": "35-44" },
-    //           { "id": "E", "value": "45-54" },
-    //           { "id": "F", "value": "55+" }
-    //         ]
-    //       },
-    //       {
-    //         "id": 3,
-    //         "question": "What are your main skin concerns?",
-    //         "options": [
-    //           { "id": "A", "value": "Acne" },
-    //           { "id": "B", "value": "Fine lines and wrinkles" },
-    //           { "id": "C", "value": "Dullness and uneven texture" },
-    //           { "id": "D", "value": "Hyperpigmentation" },
-    //           { "id": "E", "value": "Redness and sensitivity" },
-    //           { "id": "F", "value": "Enlarged pores" },
-    //           { "id": "G", "value": "Dehydration" },
-    //           { "id": "H", "value": "Loss of firmness and elasticity" }
-    //         ]
-    //       }
-    //     ],
-    //     "recommendations": [
-    //       {
-    //         "skinType": "Oily",
-    //         "ageRange": "13-17",
-    //         "concerns": ["Acne"],
-    //         "routine": [
-    //           "Gentle foaming cleanser",
-    //           "Salicylic acid toner",
-    //           "Oil-free moisturizer",
-    //           "Sunscreen",
-    //           "Spot treatment (as needed)"
-    //         ]
-    //       },
-    //       {
-    //         "skinType": "Oily",
-    //         "ageRange": "18-24",
-    //         "concerns": ["Acne"],
-    //         "routine": [
-    //           "Gentle foaming cleanser",
-    //           "Salicylic acid toner",
-    //           "Oil-free moisturizer",
-    //           "Sunscreen",
-    //           "Retinol serum (PM, alternate nights)"
-    //         ]
-    //       },  
-    //     ]
-    //   }
+
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showThanks, setShowThanks] = useState(false)
+
+  const handleAnswerOptionClick = () => {
+    // if (isCorrect) {
+    //   setScore(score + 1);
     // }
 
-    const [currentQuestion, setCurrentQuestion] = useState(0);
-    const [showThanks, setShowThanks] = useState(false)
-
-    const handleAnswerOptionClick = () => {
-      // if (isCorrect) {
-      //   setScore(score + 1);
-      // }
-  
-      const nextQuestion = currentQuestion + 1;
-      if (nextQuestion < questions.length) {
-        setCurrentQuestion(nextQuestion);
-      } else {
-        // <h1>Thanks for answering our questions.</h1>
-        setShowThanks(true);
-      }
-    };
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    } else {
+      // <h1>Thanks for answering our questions.</h1>
+      setShowThanks(true);
+    }
+  };
 
     const [skinType, setSkinType] = useState('')
     const [ageRange, setAgeRange] = useState('')
