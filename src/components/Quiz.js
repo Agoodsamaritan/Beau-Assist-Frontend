@@ -62,8 +62,22 @@ export default function Quiz() {
         "Sunscreen",
         "Retinol serum (PM, alternate nights)"
       ]
-    }  
-  ]
+    },
+    {
+    "skinType": "Dry",
+      "ageRange": "35-44",
+      "concerns": ["Fine lines and wrinkle"],
+      "routine": [
+        "Foaming cleanser",
+        "Hydration toner",
+        "Gentle Moisturizer",
+        "Sunscreen",
+        "Extra Hydration Night Cream)"
+      ]
+    },
+    ]
+      
+  
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showThanks, setShowThanks] = useState(false)
