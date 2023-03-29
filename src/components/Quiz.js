@@ -153,17 +153,20 @@ export default function Quiz() {
   return (
     <div className='thanks-message'>
       {showThanks ? (
-        <div className="flex justify-center pt-12 pb-12">
+        <div className="flex justify-center relative pb-12">
           <div className="block max-w-xl rounded-lg bg-white p-8 shadow-lg dark:bg-neutral-700">
             <h1 className="mb-5 text-3xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
               Thanks for answering
             </h1>
-          <div>
-            <iframe src="https://www.tiktok.com/embed/v2/7121944280456858926" frameborder="0" style={{maxWidth: '605px', minWidth: '325px', maxHeight: '605px', minHeight: '325px'}} ></iframe>
+          <div className='absolute relative overflow-hidden pt-56.25%'>
+            <iframe className="top-0 left-0 w-full h-full" src="https://www.tiktok.com/embed/v2/7121944280456858926" frameborder="0" allowFullScreen style={{maxWidth: '605px', minWidth: '325px', minHeight: '720px'}} />
           </div>
-          <h1 className="mb-5 text-3xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-            Here's the suggested routine:
-          </h1>
+          <div className="block max-w-xl p-8">
+            <h1 className="mb-5 text-3xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              Here's the suggested routine:
+            </h1>
+          </div>
+          
           </div>    
         </div>
   ) : (
