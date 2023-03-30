@@ -38,12 +38,12 @@ export default function Quiz() {
     }  
   ]    
   
-  const recommendations = [
+  const recommendationsData = [
     {
       "id": 1,
       "skinType": "Oily",
       "ageRange": "13-17",
-      "concerns": ["Acne"],
+      "concern": "Acne",
       "routine": [
         "Gentle foaming cleanser",
         "Salicylic acid toner",
@@ -57,7 +57,7 @@ export default function Quiz() {
       "id": 2,
       "skinType": "Oily",
       "ageRange": "18-24",
-      "concerns": ["Acne"],
+      "concern": "Acne",
       "routine": [
         "Gentle foaming cleanser",
         "Salicylic acid toner",
@@ -71,7 +71,7 @@ export default function Quiz() {
       "id": 3,
       "skinType": "Dry",
       "ageRange": "35-44",
-      "concerns": ["Fine lines and wrinkles"],
+      "concern": "Fine lines and wrinkles",
       "routine": [
         "Foaming cleanser",
         "Hydration toner",
@@ -85,7 +85,7 @@ export default function Quiz() {
       "id": 4,
       "skinType": "Dry",
       "ageRange": "45-54",
-      "concerns": ["Fine lines and wrinkles"],
+      "concern": "Fine lines and wrinkles",
       "routine": [
         "Foaming cleanser",
         "Hydration toner",
@@ -99,7 +99,7 @@ export default function Quiz() {
       "id": 5,
       "skinType": "Mature",
       "ageRange": "55+",
-      "concerns": ["Loss of firmness and elasticity"],
+      "concern": "Loss of firmness and elasticity",
       "routine": [
         "Cream cleanser",
         "Hydrating toner",
@@ -131,29 +131,21 @@ export default function Quiz() {
     }
   };
 
+  const findRecommendation = (skinType, ageRange, concern) => {
+    const recommendations = recommendationsData
 
-  // const [skinType, setSkinType] = useState('')
-  // const [ageRange, setAgeRange] = useState('')
-  // const [skinConcerns, setSkinConcerns] = useState('')
+    const matchingRecommendation = recommendations.find(recommendation => {
+      return (
+        recommendation.skinType === skinType &&
+        recommendation.ageRange === ageRange &&
+        recommendation.concern === concern
+      );
+    });
 
-  // const handleSkinTypeSelection = (selectedOption) => {
-  //     setSkinType(selectedOption.value);
-  // }
+    return matchingRecommendation ? matchingRecommendation.routine : ["NA"];
+  }  
 
-  // const handleAgeRangeSelection = (selectedOption) => {
-  //     setAgeRange(selectedOption.value);
-  // }
-
-  // const handleSkinConcernsSelection = (selectedOptions) => {
-  //     const selectedValues = selectedOptions.map((option) => option.value);
-  //     setSkinConcerns(selectedValues);
-  // }
-
-  // const findRecommendation = () => {
-  //     const recommendations = recommendations.find((rec) => {
-          
-  //     })
-  // }
+   
    
   return (
     <div className='thanks-message'>
@@ -163,9 +155,9 @@ export default function Quiz() {
             <h1 className="mb-5 text-3xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
               Thanks for answering
             </h1>
-          {/* <div className='absolute relative overflow-hidden pt-56.25%'>
+          <div className='absolute relative overflow-hidden pt-56.25%'>
             <iframe className="top-0 left-0 w-full h-full" src="https://www.tiktok.com/embed/v2/7121944280456858926" frameborder="0" allowFullScreen style={{maxWidth: '605px', minWidth: '325px', minHeight: '720px'}} />
-          </div> */}
+          </div>
           <div className="block max-w-xl p-8">
             <h1 className="mb-5 text-3xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
               Here's the suggested routine:
