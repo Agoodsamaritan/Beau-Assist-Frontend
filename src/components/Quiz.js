@@ -50,7 +50,8 @@ export default function Quiz() {
         "Oil-free moisturizer",
         "Sunscreen",
         "Spot treatment (as needed)"
-      ]
+      ], 
+      "video_link": "https://www.tiktok.com/embed/v2/7121944280456858926"
     },
     {
       "id": 2,
@@ -63,7 +64,8 @@ export default function Quiz() {
         "Oil-free moisturizer",
         "Sunscreen",
         "Retinol serum (PM, alternate nights)"
-      ]
+      ],
+      "video_link": "https://www.tiktok.com/embed/v2/7200851393245121798"
     },
     {
       "id": 3,
@@ -76,7 +78,8 @@ export default function Quiz() {
         "Gentle moisturizer",
         "Sunscreen",
         "Extra hydration night cream"
-      ]
+      ],
+      "video_link": "https://www.tiktok.com/embed/v2/7206001722584534273"
     },
     {
       "id": 4,
@@ -89,7 +92,8 @@ export default function Quiz() {
         "Gentle moisturizer",
         "Sunscreen",
         "Extra hydration night cream"
-      ]
+      ],
+      "video_link": "https://www.tiktok.com/embed/v2/7172739283202198790"
     },
     {
       "id": 5,
@@ -104,7 +108,8 @@ export default function Quiz() {
         "Firming serum (AM and PM)",
         "Brightening serum (AM and PM)",
         "Eye cream (AM and PM)"
-      ]
+      ],
+      "video_link": "https://www.tiktok.com/embed/v2/7175221365329513774"
     }
   ];
   
@@ -127,28 +132,28 @@ export default function Quiz() {
   };
 
 
-  const [skinType, setSkinType] = useState('')
-  const [ageRange, setAgeRange] = useState('')
-  const [skinConcerns, setSkinConcerns] = useState('')
+  // const [skinType, setSkinType] = useState('')
+  // const [ageRange, setAgeRange] = useState('')
+  // const [skinConcerns, setSkinConcerns] = useState('')
 
-  const handleSkinTypeSelection = (selectedOption) => {
-      setSkinType(selectedOption.value);
-  }
+  // const handleSkinTypeSelection = (selectedOption) => {
+  //     setSkinType(selectedOption.value);
+  // }
 
-  const handleAgeRangeSelection = (selectedOption) => {
-      setAgeRange(selectedOption.value);
-  }
+  // const handleAgeRangeSelection = (selectedOption) => {
+  //     setAgeRange(selectedOption.value);
+  // }
 
-  const handleSkinConcernsSelection = (selectedOptions) => {
-      const selectedValues = selectedOptions.map((option) => option.value);
-      setSkinConcerns(selectedValues);
-  }
+  // const handleSkinConcernsSelection = (selectedOptions) => {
+  //     const selectedValues = selectedOptions.map((option) => option.value);
+  //     setSkinConcerns(selectedValues);
+  // }
 
-  const findRecommendation = () => {
-      const recommendations = recommendations.find((rec) => {
+  // const findRecommendation = () => {
+  //     const recommendations = recommendations.find((rec) => {
           
-      })
-  }
+  //     })
+  // }
    
   return (
     <div className='thanks-message'>
@@ -158,9 +163,9 @@ export default function Quiz() {
             <h1 className="mb-5 text-3xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
               Thanks for answering
             </h1>
-          <div className='absolute relative overflow-hidden pt-56.25%'>
+          {/* <div className='absolute relative overflow-hidden pt-56.25%'>
             <iframe className="top-0 left-0 w-full h-full" src="https://www.tiktok.com/embed/v2/7121944280456858926" frameborder="0" allowFullScreen style={{maxWidth: '605px', minWidth: '325px', minHeight: '720px'}} />
-          </div>
+          </div> */}
           <div className="block max-w-xl p-8">
             <h1 className="mb-5 text-3xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
               Here's the suggested routine:
