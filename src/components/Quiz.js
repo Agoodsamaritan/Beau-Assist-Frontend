@@ -7,7 +7,7 @@ export default function Quiz() {
       answerOptions: [
         { "id": "A", "value": "Oily" },
         { "id": "B", "value": "Dry" },
-        { "id": "C", "value": "Combination" },
+        { "id": "C", "value": "Mature" },
         { "id": "D", "value": "Normal" },
         { "id": "E", "value": "Sensitive" }
       ]
