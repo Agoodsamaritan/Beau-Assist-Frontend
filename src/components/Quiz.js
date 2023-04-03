@@ -115,53 +115,71 @@ export default function Quiz() {
   
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [showThanks, setShowThanks] = useState(false)
+  const [showRoutine, setShowRoutine] = useState(false)
 
-  const handleAnswerOptionClick = () => {
-    // if (isCorrect) {
-    //   setScore(score + 1);
-    // }
+  const [userResponses, setUserResponses] = useState({
+    skinType: '',
+    ageRange: '',
+    concern: ''
+  });
+
+  const handleAnswerOptionClick = (value) => {
+    if (currentQuestion === 0) {
+      setUserResponses({
+        ...userResponses,
+        skinType: value
+      });
+    } else if (currentQuestion === 1) {
+      setUserResponses({
+        ...userResponses,
+        ageRange: value
+      });
+    } else if (currentQuestion === 2) {
+      setUserResponses({
+        ...userResponses,
+        concern: value
+      });
+    }
 
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
     } else {
       // <h1>Thanks for answering our questions.</h1>
-      setShowThanks(true);
+      setShowRoutine(true);
     }
   };
 
-  const findRecommendation = (skinType, ageRange, concern) => {
-    const recommendations = recommendationsData
-
-    const matchingRecommendation = recommendations.find(recommendation => {
-      return (
-        recommendation.skinType === skinType &&
-        recommendation.ageRange === ageRange &&
-        recommendation.concern === concern
-      );
-    });
-
-    return matchingRecommendation ? matchingRecommendation.routine : ["NA"];
-  }  
-
-   
-   
+  const matchingRecommendation = recommendationsData.find((recommendation) => {
+    return (
+      recommendation.skinType === userResponses.skinType &&
+      recommendation.ageRange === userResponses.ageRange &&
+      recommendation.concern === userResponses.concern
+    )
+  });
+  
+  const recommendationId = matchingRecommendation ? matchingRecommendation.id : null;
+ 
   return (
     <div className='thanks-message'>
-      {showThanks ? (
+      {showRoutine ? (
         <div className="flex justify-center relative pb-12">
           <div className="block max-w-xl rounded-lg bg-white p-8 shadow-lg dark:bg-neutral-700">
             <h1 className="mb-5 text-3xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
               Thanks for answering
             </h1>
-          <div className='absolute relative overflow-hidden pt-56.25%'>
+          {/* <div className='absolute relative overflow-hidden pt-56.25%'>
             <iframe className="top-0 left-0 w-full h-full" src="https://www.tiktok.com/embed/v2/7121944280456858926" frameborder="0" allowFullScreen style={{maxWidth: '605px', minWidth: '325px', minHeight: '720px'}} />
-          </div>
+          </div> */}
           <div className="block max-w-xl p-8">
-            <h1 className="mb-5 text-3xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            <h3 className="mb-5 text-3xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
               Here's the suggested routine:
-            </h1>
+            </h3>
+            <ul>
+              {matchingRecommendation.routine.map((step) => (
+                <li key={step}>{step}</li>
+              ))}
+            </ul>
           </div>
           
           </div>    
