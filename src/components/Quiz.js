@@ -165,21 +165,29 @@ export default function Quiz() {
       {showRoutine ? (
         <div className="flex justify-center relative pb-12">
           <div className="block max-w-xl rounded-lg bg-white p-8 shadow-lg">
-            <h1 className="mb-5 text-3xl font-medium leading-tight text-neutral-800">
+            <h1 className="flex justify-center mb-5 text-3xl font-medium leading-tight text-neutral-800">
               Thanks for answering
             </h1>
           <div className="block max-w-xl p-8">
-            <h3 className="mb-5 text-3xl font-medium leading-tight text-neutral-800">
-              Here's the suggested routine:
-            </h3>
-            <ul>
-              {matchingRecommendation.routine.map((step) => (
-                <li key={step}>{step}</li>
-              ))}
-            </ul><br></br>
-            <div className='absolute relative overflow-hidden pt-56.25%'>
-              <iframe title={recommendationId} className="top-0 left-0 w-full h-full" src={matchingRecommendation.video_link} frameborder="0" allowFullScreen style={{maxWidth: '605px', minWidth: '325px', minHeight: '720px'}} />
-            </div>
+            {!matchingRecommendation ? (
+              <h3 className="flex justify-center mb-5 text-3xl font-medium leading-tight text-neutral-800">
+                Sorry, recommendation is not available. 
+              </h3>
+            ) : (
+              <>
+                <h3 className="mb-5 text-3xl font-medium leading-tight text-neutral-800">
+                  Here's the suggested routine:
+                </h3>
+                <ul>
+                  {matchingRecommendation.routine.map((step) => (
+                    <li key={step}>{step}</li>
+                  ))}
+                </ul><br></br>
+                <div className='absolute relative overflow-hidden pt-56.25%'>
+                  <iframe title={recommendationId} className="top-0 left-0 w-full h-full" src={matchingRecommendation.video_link} frameborder="0" allowFullScreen style={{maxWidth: '605px', minWidth: '325px', minHeight: '720px'}} />
+                </div>
+              </>  
+            )}  
           </div>
           </div>    
         </div>
