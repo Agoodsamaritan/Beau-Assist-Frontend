@@ -1,0 +1,38 @@
+[
+  {
+    "questionText": "What is your skin type?",
+    "answerOptions": [
+      { "id": "A", "value": "Oily" },
+      { "id": "B", "value": "Dry" },
+      { "id": "C", "value": "Mature" },
+      { "id": "D", "value": "Normal" },
+      { "id": "E", "value": "Sensitive" }
+    ]
+  },
+  {
+    "questionText": "What is your age range?",
+    "answerOptions": [
+      { "id": "A", "value": "13-17" },
+      { "id": "B", "value": "18-24" },
+      { "id": "C", "value": "25-34" },
+      { "id": "D", "value": "35-44" },
+      { "id": "E", "value": "45-54" },
+      { "id": "F", "value": "55+" }
+    ]
+  },
+  {
+    "questionText": "What are your main skin concerns?",
+    "answerOptions": [
+      { "id": "A", "value": "Acne" },
+      { "id": "B", "value": "Fine lines and wrinkles" },
+      { "id": "C", "value": "Dullness and uneven texture" },
+      { "id": "D", "value": "Hyper pigmentation" },
+      { "id": "E", "value": "Redness and sensitivity" },
+      { "id": "F", "value": "Enlarged pores" },
+      { "id": "G", "value": "Dehydration" },
+      { "id": "H", "value": "Loss of firmness and elasticity" }
+    ]
+  }  
+]    
+  
+  

@@ -38,7 +38,7 @@ export default function Product() {
           <div className="mt-4 flex justify-between">
             <h3 className="text-md text-gray-700">
               <p>
-                <span aria-hiddden="true" className="absolute inset-0" />
+                {/* <span aria-hiddden="true" className="absolute inset-0" /> */}
                 {product.name}  
               </p>
             </h3>
@@ -48,8 +48,8 @@ export default function Product() {
         </div>
       </div>
       <div className="relative h-32 w-32">
-            <button className="relative h-10 w-32 absolute bottom-0 right-0 w-40 bg-black py-1 px-4 text-white font-bold" onClick={() => handleAddToCart(product)}>ADD TO CART</button>
-        </div>
+        <button className="relative h-10 w-32 absolute bottom-0 right-0 w-40 bg-black py-1 px-4 text-white font-bold" onClick={() => handleAddToCart(product)}>ADD TO CART</button>
+      </div>
     </div>
   )
 }

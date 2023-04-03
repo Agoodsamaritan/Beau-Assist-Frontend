@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "skinType": "Oily",
+      "ageRange": "13-17",
+      "concern": "Acne",
+      "routine": [
+        "Gentle foaming cleanser",
+        "Salicylic acid toner",
+        "Oil-free moisturizer",
+        "Sunscreen",
+        "Spot treatment (as needed)"
+      ], 
+      "video_link": "https://www.tiktok.com/embed/v2/7121944280456858926"
+    },
+    {
+      "id": 2,
+      "skinType": "Oily",
+      "ageRange": "18-24",
+      "concern": "Acne",
+      "routine": [
+        "Gentle foaming cleanser",
+        "Salicylic acid toner",
+        "Oil-free moisturizer",
+        "Sunscreen",
+        "Retinol serum (PM, alternate nights)"
+      ],
+      "video_link": "https://www.tiktok.com/embed/v2/7200851393245121798"
+    },
+    {
+      "id": 3,
+      "skinType": "Dry",
+      "ageRange": "35-44",
+      "concern": "Fine lines and wrinkles",
+      "routine": [
+        "Foaming cleanser",
+        "Hydration toner",
+        "Gentle moisturizer",
+        "Sunscreen",
+        "Extra hydration night cream"
+      ],
+      "video_link": "https://www.tiktok.com/embed/v2/7206001722584534273"
+    },
+    {
+      "id": 4,
+      "skinType": "Dry",
+      "ageRange": "45-54",
+      "concern": "Fine lines and wrinkles",
+      "routine": [
+        "Foaming cleanser",
+        "Hydration toner",
+        "Gentle moisturizer",
+        "Sunscreen",
+        "Extra hydration night cream"
+      ],
+      "video_link": "https://www.tiktok.com/embed/v2/7172739283202198790"
+    },
+    {
+      "id": 5,
+      "skinType": "Mature",
+      "ageRange": "55+",
+      "concern": "Loss of firmness and elasticity",
+      "routine": [
+        "Cream cleanser",
+        "Hydrating toner",
+        "Rich moisturizer",
+        "Sunscreen",
+        "Firming serum (AM and PM)",
+        "Brightening serum (AM and PM)",
+        "Eye cream (AM and PM)"
+      ],
+      "video_link": "https://www.tiktok.com/embed/v2/7175221365329513774"
+    }
+]
