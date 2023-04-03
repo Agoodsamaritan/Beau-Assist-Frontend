@@ -11,7 +11,7 @@ export default function Home() {
         
         <div className="mx-4 max-w-7xl pt-8 px-46 sm:static sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-4xl mt-14 font-bold tracking-tight text-white sm:text-6xl">Beauty Assist</h2>
+            <h2 className="text-4xl mt-14 font-bold tracking-tight text-white sm:text-6xl">Make the moment.</h2>
             <p className="mt-8 text-lg leading-8 text-gray-300">
             A customized skin care or makeup routine based on your answers, and provides you with an informational in depth step-by-step routine.
             </p>

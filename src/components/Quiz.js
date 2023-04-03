@@ -64,6 +64,7 @@ export default function Quiz() {
         "Oil-free moisturizer",
         "Sunscreen",
         "Retinol serum (PM, alternate nights)"
+
       ],
       "video_link": "https://www.tiktok.com/embed/v2/7200851393245121798"
     },
@@ -112,7 +113,6 @@ export default function Quiz() {
       "video_link": "https://www.tiktok.com/embed/v2/7175221365329513774"
     }
   ];
-  
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showRoutine, setShowRoutine] = useState(false)
