@@ -166,7 +166,7 @@ export default function Quiz() {
         <div className="flex justify-center relative pb-12">
           <div className="block max-w-xl rounded-lg bg-white p-8 shadow-lg">
             <h1 className="flex justify-center mb-5 text-3xl font-medium leading-tight text-neutral-800">
-              Thanks for answering
+              Thanks for taking the Quiz
             </h1>
             <div className='grid gap-4 grid-cols-2'>
               <a className="w-48 font-xl font-bold uppercase text-white py-3 px-10 font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" href="/Products">SHOP PRODUCTS</a>
