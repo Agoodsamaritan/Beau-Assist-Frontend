@@ -7,6 +7,7 @@ import Cart from './components/Cart';
 import Modal from './components/Modal';
 import Footer from './components/Footer';
 import Quiz from './components/Quiz'
+import Button from './components/Button'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './service/reducers/index'
@@ -20,8 +21,6 @@ export default function App() {
       <Provider store={store}>
         <BrowserRouter>
           <Navbar /> 
-          <Modal />
-          
           
           <Routes>
             <Route path="/" element={<Home />} />
@@ -34,8 +33,8 @@ export default function App() {
           </Routes>
         </BrowserRouter>
       
-        {/* <Modal /> */}
         <Footer />
+        <Button />
       </Provider>
     </div>
   )
