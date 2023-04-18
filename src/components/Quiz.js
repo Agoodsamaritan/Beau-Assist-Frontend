@@ -169,10 +169,13 @@ export default function Quiz() {
               Thanks for answering
             </h1>
             <div className='grid gap-4 grid-cols-2'>
-              <a className="w-48 font-xl font-bold uppercase text-white py-3 px-10 font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" href="/Products">SHOP PRODUCTS</a>
-              <a className="w-48 font-xl font-bold uppercase text-white py-3 px-10 font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" href="/Quiz">RETRY THE QUIZ</a>
+              <a className="w-48 font-xl font-bold uppercase text-white py-3 px-10 font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" 
+              type="button" href="/Products">SHOP PRODUCTS</a>
+              <a className="w-48 font-xl font-bold uppercase text-white py-3 px-10 font-bold text-xl uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-lg rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" 
+              type="button" href="/Quiz">RETRY THE QUIZ</a>
             </div>
-          <div className="block max-w-xl p-8">
+          
+            <div className="block max-w-xl p-8">
             {!matchingRecommendation ? (
               <h3 className="flex justify-center mb-5 text-3xl font-medium leading-tight text-neutral-800">
                 Sorry, recommendation is not available. 
