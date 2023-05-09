@@ -17,9 +17,6 @@ export default function App() {
 
   return (
     <div>
-      <head>
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-      </head>
 
       <Provider store={store}>
         <BrowserRouter>
