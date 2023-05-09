@@ -13,8 +13,8 @@ export default function Modal() {
         </button>
 
         <button className="fixed bottom-0 left-3 mb-7 mr-7 bg-white rounded-full " type="button" onClick={() => setShowModal(true)}>
-              <a title="beautyassistant" className="flex w-24 h-24 rounded-full max-w-full transition-all p-4 border-8 border-blue-700 hover:drop-shadow-lg transform hover:scale-110 hover:rotate--8" >
-              <img className="object-cover object-center w-full h-auto" src="https://i.ibb.co/94B29Dp/iconmonstr-customer-7-240.png"/>
+              <a title="beautyassistant" className="flex w-24 h-24 rounded-full max-w-full transition-all p-4 border-8 border-blue-700 hover:drop-shadow-lg transform hover:scale-110 hover:rotate--8" href="/Quiz">
+              <img alt="Quiz" className="object-cover object-center w-full h-auto" src="https://i.ibb.co/94B29Dp/iconmonstr-customer-7-240.png"/>
               </a>
         </button>
       

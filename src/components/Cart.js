@@ -25,7 +25,7 @@ export default function Cart() {
             <div className="mt-4 flex justify-between">
               <h3 className="text-xl text-gray-700">
                 <Link to={`/products/${product.id}`} >
-                  <span aria-hiddden="true" class="absolute inset-0" />
+                  <span aria-hidden="true" class="absolute inset-0" />
                   {product.name}
                 </Link>
               </h3>

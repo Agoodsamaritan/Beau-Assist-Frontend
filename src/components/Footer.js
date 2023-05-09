@@ -55,7 +55,7 @@ function Footer(props) {
                             <h4 className="text-white">Contact Us</h4>
                             <ul className="mt-4 ContactUs">
                                 <li id="navi-2" className="leading-7 text-sm">
-                                    <a className="text-white no-underline flex items-center">
+                                    <a className="text-white no-underline flex items-center" href="/ContactUs">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-white m-1" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M2 3a1 1 0 0 1 1-1h2.153a1 1 0 0 1 .986.836l.74 4.435a1 1 0 0 1-.54 1.06l-1.548.773a11.037 11.037 0 0 0 6.105 6.105l.774-1.548a1 1 0 0 1 1.059-.54l4.435.74a1 1 0 0 1 .836.986V17a1 1 0 0 1-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
                                         + 1 800-973-0321
@@ -89,7 +89,7 @@ function Footer(props) {
                             <li className="md:mx-2 md:inline leading-7 text-sm" id="footer-navi-2"><a className="text-white no-underline text-small" href="https://github.com/N-Santiago">Noberto Santiago</a></li>
                             <li className="md:mx-2 md:inline leading-7 text-sm" id="footer-navi-2"><a className="text-white no-underline text-small" href="https://github.com/nlo88">Nita Lo</a></li>
                             <li className="md:mx-2 md:inline leading-7 text-sm" id="footer-navi-2"><a className="text-white no-underline text-small" href="https://github.com/yani82">Yani Asari</a></li>
-                            <li className="md:mx-2 md:inline leading-7 text-sm" id="footer-navi-2"><a className="text-white no-underline text-small" href="#">Michaela Petruzziello</a></li>
+                            <li className="md:mx-2 md:inline leading-7 text-sm" id="footer-navi-2"><a className="text-white no-underline text-small" href="https://www.linkedin.com/in/michela-petruzziello/">Michaela Petruzziello</a></li>
                             <li className="md:mx-2 md:inline leading-7 text-sm" id="footer-navi-2"><a className="text-white no-underline text-small" href="https://github.com/a26230203">Bin Lin</a></li>
                             </ul>
                         </div>
